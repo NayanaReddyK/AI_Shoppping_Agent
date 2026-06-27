@@ -1,11 +1,20 @@
 # 🛒 Autonomous AI Shopping Agent Orchestrator
-![FastAPI Engine](https://img.shields.io/badge/Backend-FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
-[![Groq LLaMA3](https://img.shields.io/badge/Reasoning-Groq_LLaMA3-f34f29?style=for-the-badge&logo=git&logoColor=white)](https://groq.com)
-[![Gemini Grounding](https://img.shields.io/badge/Discovery-Gemini_Search-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
-[![MongoDB Persistence](https://img.shields.io/badge/Database-MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
+ 
+> **Multi-model price intelligence engine for the Indian e-commerce market.**  
+> Paste a product URL → get the live price, real-time competitor comparison, and a buy-or-wait recommendation — in seconds.
+ 
+<p align="center">
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Groq_LLaMA--3-F55036?style=for-the-badge&logo=meta&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Gemini_1.5-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MCP-Browser_Agent-6366F1?style=for-the-badge"/>
+</p>
 
 ---
-
+## 📋 Project Documentation 
+*   **📄 Complete Report:** [Download Project PDF Report](./docs/AI_Shopping_Agent_documentation.pdf)
+---
 A modern, full-stack, AI-powered e-commerce pricing analysis and tracking application. The system autonomously crawls product URLs, parses pricing details, queries competitor prices using Gemini with Google Search Grounding, and saves historical price details into a MongoDB Atlas database. It features a high-performance caching layer to save execution costs and response times.
 
 ---
@@ -129,3 +138,7 @@ Open your browser and navigate to:
   python scripts/view_db.py
   ```
   This creates/updates the [price_history_report.md](file:///c:/Users/Nayanareddy/OneDrive/Desktop/books/Project/debug/price_history_report.md) report detailing products, lowest/highest prices, and 6-month averages.
+---
+## Author
+ 
+**Nayana Reddy**
