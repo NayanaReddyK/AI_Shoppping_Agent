@@ -1,0 +1,7 @@
+mcp
+google-genai
+duckduckgo-search
+pymongo
+beautifulsoup4
+fastapi
+uvicorn

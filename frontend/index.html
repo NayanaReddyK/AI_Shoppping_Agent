@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Shopping Agent | Premium Real-Time Analytics</title>
+    <!-- Premium Google Fonts: Outfit for titles, Inter for UI components -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/frontend/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Premium Backdrop Grid + Glowing Blobs -->
+    <div class="background-decorations">
+        <div class="grid-overlay"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo-badge">Autonomous AI Engine</div>
+            <h1>AI Shopping Agent</h1>
+            <p>Multi-agent market synthesis & statistical history analysis powered by LLaMA3 & Gemini.</p>
+        </header>
+
+        <main>
+            <!-- Search Control Center -->
+            <div class="search-card">
+                <div class="search-box">
+                    <div class="input-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Paste an Amazon or Flipkart URL to analyze market deals...">
+                    </div>
+                    <button id="searchBtn">
+                        <span>Analyze Market</span>
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Interactive Step Progress Loader -->
+            <div id="loadingState" class="hidden">
+                <div class="loader-card">
+                    <div class="spinner-container">
+                        <div class="outer-ring"></div>
+                        <div class="inner-ring"></div>
+                        <div class="core-dot"></div>
+                    </div>
+                    
+                    <div class="status-summary">
+                        <h4 id="loadingHeader">Initializing Analysis</h4>
+                        <p id="loadingText">Connecting to MCP browser endpoints...</p>
+                    </div>
+
+                    <!-- Steps Timeline Progress -->
+                    <div class="steps-timeline">
+                        <div class="step" id="step1">
+                            <div class="step-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <span class="step-label">Scraper Engine Spin-up</span>
+                        </div>
+                        <div class="step" id="step2">
+                            <div class="step-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <span class="step-label">AI Extraction (Groq/LLaMA3)</span>
+                        </div>
+                        <div class="step" id="step3">
+                            <div class="step-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <span class="step-label">Competitor Market Check (Gemini Search)</span>
+                        </div>
+                        <div class="step" id="step4">
+                            <div class="step-marker">
+                                <div class="marker-dot"></div>
+                            </div>
+                            <span class="step-label">MongoDB History & Synthesis</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Results Dashboard -->
+            <div id="resultsDashboard" class="hidden">
+                <div class="dashboard-grid">
+                    <!-- Column 1: Core Decisions -->
+                    <div class="panel main-panel">
+                        <div class="deal-badge-container">
+                            <span class="deal-badge" id="recBadge">Deal Check</span>
+                        </div>
+                        
+                        <h2 class="product-title" id="productTitle">Product Title Placeholder</h2>
+
+                        <div class="recommendation-box">
+                            <div class="recommendation-header">
+                                <span class="label">Decision</span>
+                                <h3 id="recDecision">WAIT</h3>
+                            </div>
+                            <div class="divider"></div>
+                            <p id="recReasoning">The dynamic price index shows a higher deviation from average values. Recommend waiting for upcoming markdown drops.</p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Statistical Insights -->
+                    <div class="panel stats-panel">
+                        <div class="stats-header">
+                            <h3>Real-Time Competitor Index</h3>
+                            <span class="badge">Live</span>
+                        </div>
+                        
+                        <div class="price-distribution-container">
+                            <ul id="storePricesList">
+                                <!-- Dynamic List Items -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 / Full Span: Historical Analysis -->
+                    <div class="panel chart-panel full-width">
+                        <div class="chart-header">
+                            <div>
+                                <h3>Price Deviation Metrics</h3>
+                                <p class="sub">Historical comparison computed from MongoDB Atlas logs</p>
+                            </div>
+                        </div>
+                        <div class="canvas-wrapper">
+                            <canvas id="historyChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="/frontend/app.js"></script>
+</body>
+</html>
