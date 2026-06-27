@@ -10,7 +10,7 @@ import urllib.parse
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
 
-SCRAPER_API_KEY = "f618ee3965566ce7dfa1852f25f0040a"
+SCRAPER_API_KEY = "your scraper api key"
 
 async def fetch_html_via_mcp(session, target_url):
     print(f"   Fetching via ScraperAPI: {target_url}")
